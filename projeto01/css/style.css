@@ -1,0 +1,211 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+
+:root{
+    /*Cores*/
+    --cor01:#03A61C;
+    --cor02:#F29F05;
+    --cor03:#F27405;
+    --cor04:#BF6D4E;
+    --cor05:#F23005;
+    --cor06: #fff;
+    --cor07: #000;
+
+    /*Fontes*/
+    --fonte-princial: Arial, Helvetica, sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+    --font-tercearia: 'Alkatra', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte-princial);
+}
+
+header{
+    padding-top: 20px;
+    max-height: 250px;
+    width: 100%;
+    background-image: linear-gradient(to top, var(--cor02), transparent);
+}
+
+header img{
+    display: block;
+    max-height: 150px;
+    max-width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.342);
+}
+
+header > nav {
+    text-align: center;
+    background-color:var(--cor02);
+    height: 25px;
+    padding: 10px 3px 5px 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.404);
+}
+
+header > nav > a{
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: bolder;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    color: var(--cor06);
+}
+
+header > nav > a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    background-color: var(--cor03);
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    padding-top: 20px;
+    float: left;
+    margin-left: 5%;
+}
+
+main div#cabecalho img{
+    width: 80%;
+    display: block;
+    margin:0 auto;
+}
+
+main div#cabecalho > h1{
+    padding-top: 50px;
+    text-align: center;
+    font-family: var(--font-tercearia);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.185);
+    font-weight: normal;
+}
+main div#cabecalho > h2{
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.185);  
+}
+
+main div#cabecalho button{
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 15px;
+    margin: 50px auto;
+    background-color: var(--cor02);
+    color: var(--cor06);
+    font-weight: bold;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+}
+
+main div#cabecalho button:hover{
+    background-color: var(--cor03);
+    cursor: pointer;
+    transition: 0.2s;
+}
+main div#serv-reparacao{
+    text-align: center;
+    width: 100%;
+    background-color: #F29F05;
+    margin: 0 0px 0 0px;
+    padding-bottom: 30px;
+}
+
+main div#serv-reparacao h1{
+    text-align: center;
+    font-family: var(--font-tercearia);
+    margin: 20px 0 20px 0;
+    padding-top: 20px;
+    color: var(--cor06);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
+}
+
+
+main > div#serv-reparacao > section{
+    width: 270px;
+    margin: 10px 15px 10px 15px;
+    display: inline-block;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.100);
+    border-radius: 10px;
+    background-color: var(--cor06);
+}
+
+main div#serv-reparacao h2{
+    text-align: center;
+    font-family: var(--font-tercearia);
+    color: var(--cor03);
+    margin: 10px 0 5px 0;
+}
+
+main div#serv-reparacao img{
+    width: 50px;
+    height: 50px;
+    margin: 22px 10px 10px 10px;
+}
+
+main div#serv-reparacao > section > p{
+    text-align: justify;
+    text-indent: 50px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+div#serv-domestico{
+    margin-top: 50px;
+}
+div#serv-domestico > h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-family: var(--font-tercearia);
+}
+
+.posicao-div{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.posicao-div > h2{
+    display: inline-block;
+    position: relative;
+    max-width: 25%;
+    top: -150px;
+    left: 100px;
+    font-family: var(--font-tercearia);
+    background-color: #F29F05;
+}
+
+.posicao-div >p{
+
+}
+
+.posicao-div img{
+    max-width:40%;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+
+footer{
+    clear: both;
+}
