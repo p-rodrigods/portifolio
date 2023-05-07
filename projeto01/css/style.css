@@ -187,25 +187,7 @@ div#serv-domestico > h1{
 
 .posicao-div > h2{
     display: inline-block;
-    position: relative;
-    max-width: 25%;
-    top: -150px;
-    left: 100px;
     font-family: var(--font-tercearia);
     background-color: #F29F05;
 }
 
-.posicao-div >p{
-
-}
-
-.posicao-div img{
-    max-width:40%;
-    float: left;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.178);
-}
-
-footer{
-    clear: both;
-}
