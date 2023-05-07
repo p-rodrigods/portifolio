@@ -176,13 +176,14 @@ div#serv-domestico{
 
 div#serv-domestico h1{
     font-family: var(--font-tercearia);
+    padding: 50px 0 50px 0;
 
 }
 
 div#serv-domestico img{
     background-color: var(--cor06);
     display: inline-block;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.200);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
     margin: 20px 10px 20px 10px;
     padding: 10px;
     border-radius: 5px;
@@ -190,13 +191,14 @@ div#serv-domestico img{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    width: 350px;
-    height: 300px;
+    max-width: 350px;
+    max-height: 200px;
 }
 
 div#serv-domestico h2{
     padding: 20px 0 20px 0;
     color: #F29F05;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
 
 }
 div#serv-domestico p{
@@ -207,17 +209,57 @@ div#serv-domestico p{
     width: 500px;
     margin: auto;
     text-align: justify;
+    text-indent: 45px;
 }
 
 div#sessao-contato{
     background-color: #F27405;
     text-align: center;
     padding: 20px;
-    margin: 20px;
-}h
+    margin: 50px 5px 5px 5px;
+}
 
-div#sessao-contato h1{
-    color: var(--cor06);
+div#sessao-contato section{
+    margin: 10px 0 10px 0;
+}
+div#sessao-contato h3{
+    font-family: var(--font-tercearia);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+}
+
+div#sessao-contato p{
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+}
+
+div#sessao-contato input{
+    margin:  10px 0 0 0;
+    border: 0;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: var(--cor06);
+    color: var(--cor02);
+    font-family: var(--font-tercearia);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+div#sessao-contato #btn-enviar{
+    width: 100px;
+    margin: auto;
+}
+div#sessao-contato img{
+    max-width: 50px;
+    max-height: 50px;
 }
 
 footer{
@@ -225,4 +267,20 @@ footer{
     background-color: #BF6D4E;
     padding: 10px;
     text-align: center;
+}
+
+footer p{
+    font-family: var(--fonte-secundaria);
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor07);
+    font-weight: bolder;
+}
+
+footer a:hover{
+    color: var(--cor01);
 }
