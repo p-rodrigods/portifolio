@@ -250,13 +250,23 @@ div#sessao-contato input{
     color: var(--cor02);
     font-family: var(--font-tercearia);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 div#sessao-contato #btn-enviar{
     width: 100px;
     margin: auto;
+    padding: 5px;
+    height: 30px;
+    background-color: var(--cor02);
+    color: #fff;
 }
+
+div#sessao-contato #btn-enviar:hover{
+    background-color: var(--cor03);
+    border: 1px solid var(--cor04);
+}
+
 div#sessao-contato img{
     max-width: 50px;
     max-height: 50px;
