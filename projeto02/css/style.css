@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
     outline: none;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
@@ -28,6 +31,33 @@ div.container{
     padding: 0 5%;
 }
 
+.btn{
+    background-color: #4f9cf9;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover{
+    background-color: #3580db;
+   
+}
+
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+@keyframes animate-outline{
+    from{
+        outline: 0px solid #4f9bf95e;
+    }
+    to{
+        outline: 10px solid #4f9bf95e;
+    }
+}
 header#home{
     background-image: url("../img/background-home.jpg");
     background-position: center;
@@ -40,6 +70,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
 nav ul{
     display: flex;
     align-items: center;
@@ -53,6 +84,20 @@ nav ul a{
     display: block;
 }
 
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
 .banner{
     display: flex;
     justify-content: center;
@@ -62,4 +107,16 @@ nav ul a{
     margin: 150px;
     text-align: center;
     padding: 0 90px;
+}
+
+.banner-text h1{
+    font-size: 96px;
+    color: #fff
+}
+
+.banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
 }
